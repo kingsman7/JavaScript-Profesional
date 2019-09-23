@@ -1,0 +1,22 @@
+{
+  "name": "js-pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html ejercicios/index.html ejercicios/*.html ejercicios/**/*.html"
+  },
+  "keywords": [
+    "Angel"
+  ],
+  "author": "Angel E Barrios <ae.barrios@otmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "dependencies": {}
+}
