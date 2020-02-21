@@ -22,7 +22,7 @@ class BitcoinPrice implements Subject {
   }
 
   unsubscribe(observer:Observer){
-    debugger
+   
     const index = this.observers.findIndex(obs=>{
       return obs === observer
     })
@@ -31,7 +31,7 @@ class BitcoinPrice implements Subject {
   }
 
   notify(data:any){
-    this.observers.forEach(observers => observers.update(data))
+    this.observers.forEach(observer => observer.update(data))
   }
 
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>abrir consola</h1>
+  <script>
+    const cal = (num)=>{
+      let total = num || 0
+      return{
+        sumar: (num2)=>{
+          total += num2
+          return this
+        },
+        resta: (num2)=>{
+          total -= num2
+          return this
+        },
+        imprimirTotal: ()=>{
+          console.log(total)
+          return this
+        }
+      }
+    }
+
+    const calculador = cal(10)
+
+    calculador.sumar(10)
+    calculador.sumar(50)
+    calculador.resta(15)
+    calculador.imprimirTotal()
+  </script>
+</body>
+</html>

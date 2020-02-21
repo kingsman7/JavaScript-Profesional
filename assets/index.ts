@@ -25,6 +25,8 @@ muteButton.onclick = () => {
 };
 
 //serviceWorker para trabajar offlien y dejar las respuestas de las peticiones en cache
+//if para verificar si el navegador trabaje con sw. y si trabaja registar el archivo
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/sw.js').then(function(registration) {
